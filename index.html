@@ -23,35 +23,38 @@
                 </div>
                 <div class="col-md-5">
                     <label for="validationDefault01" class="form-label"><b>Card #</b></label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="XXXXXXXXXXXXXXXXXX" maxlength="18" required>
+                    <input type="text" class="form-control" id="tarjeta" name="tarjeta" placeholder="XXXXXXXXXXXXXXXXXX" maxlength="16" pattern="\d{16}" required>
                   </div>
                   <div class="col-md-3">
                     <label for="validationDefault01" class="form-label"><b>CVC #</b></label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="0000" maxlength="4" required>
+                    <input type="text" class="form-control" id="cvc" name="cvc" placeholder="000" maxlength="3" required>
                   </div>
                   <div class="col-md-4">
                     <label for="validationDefault01" class="form-label" ><b>Amount</b> </label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="Amount" maxlength="8" required>
+                    <input type="text" class="form-control" id="Amount" name="amount" placeholder="Amount" maxlength="8" required>
                     
                   </div>
 
                 <div class="col-md-6">
                   <label for="validationDefault01" class="form-label"><b>First name</b></label>
-                  <input type="text" class="form-control" id="validationDefault01" maxlength="40" required>
+                  <input type="text" class="form-control" id="First" name="firts" maxlength="40" required>
                 </div>
                 <div class="col-md-6">
                   <label for="validationDefault02" class="form-label"><b>Last name</b></label>
-                  <input type="text" class="form-control" id="validationDefault02" maxlength="40" required>
+                  <input type="text" class="form-control" id="last"  name="last" maxlength="40" required>
                 </div>
                 <div class="col-md-6">
                   <label for="validationDefault03" class="form-label"><b>City</b></label>
-                  <input type="text" class="form-control" id="validationDefault03" maxlength="15" required>
+                  <input type="text" class="form-control" id="City" name="city" maxlength="15" required>
                 </div>
                 <div class="col-md-3">
                   <label for="validationDefault04" class="form-label"><b>State</b></label>
-                  <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="0"><b>Pick a state</b></option>
-                    
+                  <select class="form-select" id="state" required>
+                    <option selected value=""><b>Pick a state</b></option>
+                    <option  value="1"><b>Madrid</b></option>
+                    <option  value="2"><b>Barcelona</b></option>
+                    <option  value="3"><b>Valencia</b></option>
+                  
                   </select>
                 </div>
                 <div class="col-md-3">
@@ -73,13 +76,14 @@
                     <textarea name="" id="" cols="70" rows="3" class="container"></textarea>
                     <p>Add any notes here</p>
                 </div>
-            </form>
-            <div class=" card-footer text-muted">
-                <div class="col-2 offset-10">
-                <a href="#" class="btn btn-secondary">Cancel</a>
-                <a href="#" class="btn btn-primary">Send</a>
+            
+            <div class=" card-footer text-muted text-end">
+                <div class="col-3 offset-9">
+               <input type="reset" class="btn btn-secondary" placeholder="Cancel">
+                <input type="submit" class="btn btn-primary" placeholder="Send" >
+                
                 </div>
-              </div>
+              </div></form>
 </div>
 
     <script src="https://kit.fontawesome.com/287bcbf3a3.js" crossorigin="anonymous"></script>
